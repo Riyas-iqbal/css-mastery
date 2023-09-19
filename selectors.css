@@ -19,9 +19,15 @@ p {
     font-style: italic;
 }
 
+/* Universal selector */
+* {
+    color: green;
+}
+
 
 /* Group selectors */
-h1, h1{
+h1,
+h1 {
     color: blue;
 }
 
@@ -30,6 +36,6 @@ both are different
 The above selects both h1 and h2
 The below one selects h2 tags that appear inside an h1 tag
 */
-h1 h2{
+h1 h2 {
     color: red;
 }
