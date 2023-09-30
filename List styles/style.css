@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 5% 10%;
+    font-size: 2rem;
+}
+
+ol {
+    list-style-type: decimal; /* default */
+}
+
+ul{
+    text-align: center; /* will make the text center */
+    list-style-type: square;
+    list-style-image: url('the_image_you_want_to_use_instead_of_the_marker');
+    list-style-position: inside; /* the position of the marker on the list  */
+    /* shorthand for all the above 
+    list-style: square url('your link') inside ; 
+    */
+}
+
+ul li {
+    /* can use all the above style */
+    color: red;
+}
+
+/* pseudo class to change the style of the even li */
+ul li:nth-child(even) {
+    color: blue;
+}
+
+/* pseudo element - should start with 2 colons instead of 1 */
+/* we can change the marker */
+::marker{
+    color: red;
+    content: "5 >> "; /* Now this will be the marker -  it will show the value here*/
+}
