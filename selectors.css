@@ -39,3 +39,10 @@ The below one selects h2 tags that appear inside an h1 tag
 h1 h2 {
     color: red;
 }
+
+
+/*
+    import font url in css file 
+*/
+
+@import url('https:yourfontlinkhere')

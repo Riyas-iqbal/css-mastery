@@ -1,0 +1,25 @@
+a {
+    color: blue ;
+    text-decoration: none;
+}
+/* pseudo classes */
+
+/* state of the link after clicking */
+a:visited {
+    color: purple;
+}
+
+/* state of the link while the mouse is being on the top a
+    and while the link is on focus (screen readers)
+*/
+a:hover, a:focus {
+    color: dodgerblue;
+    opacity: 0.9; /*if you dont want to use another color this will give some effect*/
+}
+
+/* state of the link while being pressed*/
+a:active {
+    color: red;
+}
+
+/* active will have more specificity because it is at the bottom */
