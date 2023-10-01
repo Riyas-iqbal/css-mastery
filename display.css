@@ -1,0 +1,23 @@
+body {
+    display: block; 
+    /* 
+    Will take 100% width of the parent elemenet or 
+    what is given to it. items stack on top of each other 
+    */
+
+    display: inline;
+    /* 
+    Will not take 100% width of the parent elemenet. 
+    items can go side-by-side if there is space.
+    properties like margin height cannot be applied
+    padding works differently
+    */
+
+    display: inline-block;
+    /* 
+    Will not take 100% width of the parent elemenet.
+    but other properties work just like display:block
+    - This can be helpful when trying to change an 
+    anchor tag into a button
+    */
+}
