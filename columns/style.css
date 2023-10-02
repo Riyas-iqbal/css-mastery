@@ -1,0 +1,11 @@
+
+
+
+.columns{
+    column-count: 4; /* will divide the items inside to 4 columns will adjust according to the width */
+    column-width: 250px; /* will maitain atleast 250px for each column */
+    
+    columns: 4 250px;/* shorthand for the above two */
+    column-rule: 3px solid black; /* same as border will add borders inbetween this columns */
+    column-gap: 3rem;
+}
