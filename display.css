@@ -20,4 +20,12 @@ body {
     - This can be helpful when trying to change an 
     anchor tag into a button
     */
+
+    /* 
+    when we use float property the item can go 
+    beyond the normal flow and create problems
+    we can use this property in the parent element 
+    to make it grow with the floated element
+    */
+    display: flow-root;
 }
