@@ -1,0 +1,57 @@
+.box{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px ;
+    height: 30rem;
+    width: 30rem;
+    gap: 10px;
+    /* flex: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    background: black;
+    /* flex: 1; */
+    height: 100px;
+    flex-basis: 100px; /* Similar to min-width */
+    flex-grow: 1; /* The items will maintain same width */
+
+} 
+
+.item:nth-child(2){
+    flex-grow: 2; /* now the second element element will take more size */
+}
+
+.items{
+    flex-shrink: 1;
+}
+
+.item:nth-child(2){
+    flex-shrink: 2; /* Now the second element will shrink more than other elements */
+}
+
+.items{
+    flex: 1 1 250px;
+    /* we can use this as a shorthand property for the above */
+    /* flex: flex-grow flex-shrink flex-basis */
+}
+
+.item:nth-child(2){
+    flex: 2 2 250px;
+    /* 
+    now this element will grow more than the first one when there is space
+    and when there is no space it will shrink more than the first one
+     */
+    order: 3; 
+    /* 
+    this property will make the element move 3 position from where 
+    it is currently standing inside the flex. giving it minus value will do the reverse. 
+    */
+}
+
+/* 
+    Master flexbox by going to this website
+    - link - https://flexboxfroggy.com
+ */
