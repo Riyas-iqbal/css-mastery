@@ -1,0 +1,50 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.container{
+    padding: 0.5rem;
+    background: white;
+    display: grid;
+    color: white;
+    font-size: 1.6rem;
+
+    display: grid;
+    /* grid-auto-flow: column;  */
+    /* This will set the direction of the elements - default : row */
+
+    grid-template-columns: 2fr 1fr 1fr;
+    /*
+    more control over the size and no of items
+    the above means there will be 3 items in the one column
+    and the first one twice as wide as the rest two    
+    */
+    grid-template-columns: repeat(4, 1fr);
+    /* if we have multiple items we can use this */
+
+    grid-template-rows: minmax(150px, auto);
+    /* we can also control the rows using this. */
+    
+    /* control gaps */
+    gap: 1em;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    gap: 1em 1em;
+    /* short hand */
+}
+
+.item {
+    padding: 0.5rem;
+    min-width: 100px;
+    height: 100px;
+    margin: 5px;
+    background: black;
+}
